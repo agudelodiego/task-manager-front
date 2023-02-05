@@ -1,0 +1,16 @@
+.userImage{
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+}
+.delete{
+  color: gray;
+  transition: color .3s;
+}
+.delete:hover{
+  color: red;
+}
+.people{
+  height: 200px;
+  overflow-y: auto;
+}

@@ -1,0 +1,42 @@
+.chatImg{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.message{
+  height: 20px;
+  overflow: hidden;
+}
+.w-200px{
+  width: 250px;
+}
+.newMessage{
+  width: 70%;
+  position: fixed;
+  left: calc(15%);
+  bottom: 40px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.chatContent{
+  margin: auto;
+  margin-top: 15px;
+  border-radius: 12px;
+  width: 80%;
+  height: calc(100vh - 200px);
+}
+@media screen and (min-width: 700px) and (max-width: 1000px){
+  .newMessage{
+    width: 50%;
+    left: calc(25%);
+  }
+}
+@media screen and (min-width:1000px){
+  .newMessage{
+    width: 40%;
+    left: calc(30%);
+  }
+}

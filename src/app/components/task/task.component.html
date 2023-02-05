@@ -1,0 +1,75 @@
+<!-- Card -->
+<div class="card my-3">
+  <div class="card-body">
+
+    <!-- * Delete task icon -->
+    <div>
+      <fa-icon class="btn-icon fs-5 delete" [icon]="deleteIcon"></fa-icon>
+      <span class="ms-3 text-secondary">Delelte task</span>
+    </div>
+    
+    <!-- * Task title -->
+    <h5 class="card-title text-center mb-4 text-primary">Card title</h5>
+
+    <!-- * Task time  -->
+    <h6 class="card-subtitle mb-2 text-muted">From: 20/9/2020</h6>
+    <h6 class="card-subtitle mb-4 text-muted">To: 20/9/2021</h6>
+
+    <!-- * Task description -->
+    <h6>Task description</h6>
+    <p class="card-text mb-4">
+      Some quick example text to build on the card title and make up the bulk of the card's content.
+    </p>
+
+    <!-- * Task members -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Team members
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+
+            <!-- ! User -->
+            <div class="d-flex align-items-center justify-content-start my-1 border border-1 border-secondary p-1 rounded-5">
+              <div>
+                <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg" class="rounded-circle userImage" alt="User image">
+              </div>
+              <div class="ms-3 flex-fill">
+                Dolore Delano
+              </div>
+              <div class="px-2">
+                <fa-icon class="btn-icon delete" [icon]="deleteIcon"></fa-icon>
+              </div>
+            </div>
+
+            <!-- ! User -->
+            <div class="d-flex align-items-center justify-content-start my-1 border border-1 border-secondary p-1 rounded-5">
+              <div>
+                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rounded-circle userImage" alt="User image">
+              </div>
+              <div class="ms-3 flex-fill">
+                Aquiles Brinco
+              </div>
+              <div class="px-2">
+                <fa-icon class="btn-icon delete" [icon]="deleteIcon"></fa-icon>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ! Button for update the task -->
+      <div class="text-center mt-3">
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal">
+          Task administrator
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</div>
